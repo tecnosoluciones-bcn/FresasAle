@@ -1,1 +1,864 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FresasAle | Fresas con crema en Barcelona</title>
+  <meta name="description" content="FresasAle: fresas con crema, postres dulces y experiencias irresistibles en Barcelona. Pide ahora y descubre el postre favorito de Barcelona." />
+  <meta name="keywords" content="fresas con crema Barcelona, postres Barcelona, fresas con nata Barcelona, postres a domicilio Barcelona, mejores postres Barcelona" />
+  <meta name="theme-color" content="#ff5c92" />
+  <meta property="og:title" content="FresasAle | Un postre que te roba el corazón" />
+  <meta property="og:description" content="Fresas con crema que enamoran a primera vista. Marca premium, visual y deliciosa en Barcelona." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAYAAAB0t9V3AAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nO3de5CV5X3n8c+b7Q4sQ0wQIzAIEMAEbBDFUVwMUMRpJjGju5hMbNAk5rRmEhOTjCaYmxicJk2Ul0ydJJnMNKOeTEwm2XQ30lp7cSkQxJmGRqNoWQxF1GgS0M4C4m7PH/u4f+39sMvt7m7f9/3d+57v7b3P2j6f+fV73vd93+f9zjlz5sxhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwKXqv3wAAfN5dW1t7S8fHx0+fPn0OAOBOatWq1R4eHv7u2bNnAQDgNn744Yf+6enp8+fPn3/ixIkTAADgVq1a9f7o6OgnT54cAAB4GzMzM7+6du36x48fPwAAwJ0dHR39+uuvv9+5c+cAAOB2V69e/d7q6uq///77AQCAO7l58+bv7u7uN2/ePAAA4M7OnTv38PBw9+7dAwAAd+LgwYOfP3/++du3bwEAALfxySef/PzAgQM3b948AABwJ8eOHfv9/v37d+/ePQAAsL8HDx78+csvv3zy5MkDAAB3cuzYsd8dO3bs7NmzBwAA7uTAgQO/PXny5JMnTw4AANzJjRs3fvP06dNffvnlAADAnezatetsamp68+ZNAAA4k6tXr/7x4cOHv/766wEAALfyyCOPfPXq1a8+fvw4AADgTv7zn//8/Pz8+cuXLwEAALeRkZHx1KlTt27dOgAAsKfHjh379OnT33rrrQEAALeTQ4cO/ebMmXOvXr0CAAB3cvPmzT958uQXX3wxAACwvw8ePPjzzz9/9uxZAwAAd3Lz5s0/f/78I0eOHAAA4M7Wr1//zTffvH79+gEAALeTQYMGffTo0d98880AAOBOVq1a9a+mpqbPnz8fAADgTq5du/abM2fO/fDDDwEAALeTffv2/fLly3/xxRcDAAB3MmLEiD969Ojhw4cPAADczf79+7/58uXPP/98AADAnewf//jHn3/++fPnzx8AANzJvn37fvXq1Y8cOQIAAHfS2Ng4nTt37k8//fQAAOBOLl68+M2bN9+6dSsAALCnW7du/bS0tL/88ssBAIC7WbRo0f/++uuvL1++PAAA4E5u3rz5nTt3fvLkSQAAd9LQ0PDrr7/+7NmzBwAA7uTdd9/9+PHjX3zxRQAAcCd79uz53Llz79ixIwAAuJONGzf+6quvPvXUUwEAANzJ1q1bP3r06GPHjgEAALeSkpLyq6++euLECQAAdzJ69OjPPvvsEydOAADAnew///nP3+3bt1+9evUAAOCu7t69+5UrV/7hhx8CAAB3cvny5V+9evX58+fPAAA4E5OnDjx7NmzL168CAAAt5GcnPw///M/f/vttwEAALfStGnTPnDgwMOHDwEAANzJ4MGDf/3113/22WcBAAB3MmfOnN+8efPNmzcnAADczfDhw3/77bePHj0KAADcyf79+79///6jR48CAAAt5LJly5YOHTr0k08+AQAAuJP58+f/7LPP3rlzJwAA3MnQoUP/7LPP3r59OwAAcCeHDx/+0KFD79+/HwAA3MmpU6d+48aNly9fDgAA3EmrVq2+ffv2ly9fDgAA3Mn58+d/8uTJQ4cOAQAAuJPKykq3b98+evQoAAC4k/T09PfOnTt/8MEHAQAAuJPTp0//xRdf3L59OwAAcCe9e/f+0KFDL1++HAAA3MmkSZP+5ptvvn79OgAAuJMBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgS/8BVTRtW8ZP0wwAAAAASUVORK5CYII=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fff8fb;
+      --bg-soft: #fff2f7;
+      --cream: #fffaf3;
+      --rose: #ff5c92;
+      --rose-dark: #d62f70;
+      --straw: #ff4b5f;
+      --peach: #ffb67a;
+      --gold: #ffc857;
+      --text: #3f2330;
+      --muted: #7b5d69;
+      --card: rgba(255,255,255,.58);
+      --border: rgba(255,255,255,.48);
+      --shadow: 0 20px 60px rgba(255, 86, 136, .16);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 18px;
+      --max: 1220px;
+    }
 
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Outfit', system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,92,146,.18), transparent 25%),
+        radial-gradient(circle at 85% 12%, rgba(255,182,122,.18), transparent 24%),
+        radial-gradient(circle at 20% 90%, rgba(255,75,95,.10), transparent 24%),
+        linear-gradient(180deg, #fff9fc 0%, #fff3f8 50%, #fffaf5 100%);
+      overflow-x: hidden;
+    }
+
+    .particles, .particles::before, .particles::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.72) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,92,146,.15) 1.3px, transparent 1.3px),
+        radial-gradient(circle, rgba(255,182,122,.18) 1.1px, transparent 1.1px);
+      background-size: 110px 110px, 170px 170px, 220px 220px;
+      animation: drift 24s linear infinite;
+    }
+    .particles::before { animation-duration: 34s; opacity: .55; }
+    .particles::after { animation-duration: 46s; opacity: .45; }
+
+    @keyframes drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-110px); }
+    }
+
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; position: relative; z-index: 1; }
+    .glass {
+      background: var(--card);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      text-decoration: none;
+      padding: 15px 24px;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, opacity .25s ease;
+      cursor: pointer;
+      font-size: .98rem;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-3px) scale(1.01); }
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--rose), var(--straw), var(--peach));
+      box-shadow: 0 16px 40px rgba(255, 92, 146, .32);
+    }
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255,255,255,.7);
+      border: 1px solid rgba(255,255,255,.6);
+      box-shadow: 0 12px 24px rgba(63,35,48,.08);
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.6);
+      border: 1px solid rgba(255,255,255,.7);
+      color: var(--rose-dark);
+      font-weight: 700;
+      letter-spacing: .02em;
+      box-shadow: 0 10px 30px rgba(255,92,146,.08);
+    }
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 42px;
+    }
+    .section-head h2 {
+      margin: 18px 0 14px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.02;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.7;
+    }
+
+    header {
+      position: sticky;
+      top: 12px;
+      z-index: 30;
+      padding: 18px 0 0;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 18px;
+      border-radius: 999px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--text);
+      min-width: 0;
+    }
+    .brand img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 10px 24px rgba(255,92,146,.22);
+      background: #fff;
+    }
+    .brand strong { display: block; font-size: 1.1rem; }
+    .brand span { color: var(--muted); font-size: .9rem; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      opacity: .86;
+      transition: opacity .2s ease, color .2s ease, transform .2s ease;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--rose-dark); transform: translateY(-1px); }
+
+    .hero {
+      padding: 42px 0 70px;
+      min-height: calc(100vh - 110px);
+      display: flex;
+      align-items: center;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .hero-copy h1 {
+      font-size: clamp(2.8rem, 8vw, 5.8rem);
+      line-height: .96;
+      margin: 18px 0;
+      letter-spacing: -0.04em;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--rose-dark), var(--rose), var(--peach));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-copy p {
+      font-size: 1.12rem;
+      color: var(--muted);
+      max-width: 620px;
+      line-height: 1.8;
+      margin: 0 0 28px;
+    }
+    .hero-actions, .social-row, .contact-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 30px;
+      max-width: 720px;
+    }
+    .stat {
+      padding: 18px;
+      border-radius: 22px;
+    }
+    .stat strong { display: block; font-size: 1.45rem; }
+    .stat span { color: var(--muted); font-size: .94rem; }
+
+    .hero-visual {
+      position: relative;
+      min-height: 620px;
+    }
+    .visual-card {
+      position: absolute;
+      inset: 0;
+      border-radius: 36px;
+      overflow: hidden;
+      padding: 18px;
+      transform: translateY(0px);
+      animation: float 5.8s ease-in-out infinite;
+    }
+    .visual-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(255, 80, 129, .22);
+    }
+    .tag, .mini-card {
+      position: absolute;
+      border-radius: 22px;
+      padding: 16px 18px;
+    }
+    .tag {
+      top: 28px;
+      left: -12px;
+      font-weight: 800;
+      color: var(--rose-dark);
+    }
+    .mini-card {
+      right: -12px;
+      bottom: 38px;
+      max-width: 220px;
+    }
+    .mini-card strong { display: block; margin-bottom: 6px; }
+    .mini-card span { color: var(--muted); line-height: 1.5; font-size: .95rem; }
+
+    .floating-berry, .floating-heart {
+      position: absolute;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      animation: floatAlt 5.2s ease-in-out infinite;
+      filter: drop-shadow(0 10px 18px rgba(255,92,146,.24));
+    }
+    .berry-1 { right: 8%; top: 12%; }
+    .berry-2 { left: 4%; bottom: 16%; animation-delay: .8s; }
+    .heart-1 { right: 28%; bottom: 10%; animation-delay: 1.2s; }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes floatAlt {
+      0%,100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-14px) rotate(4deg); }
+    }
+
+    .menu-grid, .benefits-grid, .gallery-grid, .reviews-grid {
+      display: grid;
+      gap: 22px;
+    }
+    .menu-grid { grid-template-columns: repeat(3, 1fr); }
+    .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 210px;
+    }
+    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .card {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+    }
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+    .product-card:hover { transform: translateY(-8px); box-shadow: 0 24px 60px rgba(255,92,146,.18); }
+    .product-media {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+    .product-media img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .45s ease;
+    }
+    .product-card:hover .product-media img { transform: scale(1.07); }
+    .price-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--rose), var(--straw));
+      box-shadow: 0 10px 20px rgba(255,92,146,.28);
+    }
+    .product-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+    .product-body h3 { margin: 0; font-size: 1.24rem; }
+    .product-body p { margin: 0; color: var(--muted); line-height: 1.65; }
+    .product-body .btn { margin-top: auto; width: 100%; }
+
+    .benefit {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      transition: transform .25s ease;
+    }
+    .benefit:hover { transform: translateY(-6px); }
+    .benefit .icon {
+      width: 62px; height: 62px; border-radius: 18px;
+      display: grid; place-items: center;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(255,92,146,.2), rgba(255,182,122,.22));
+    }
+    .benefit h3 { margin: 0 0 10px; }
+    .benefit p { margin: 0; color: var(--muted); line-height: 1.65; }
+
+    .gallery-item {
+      border-radius: 28px;
+      overflow: hidden;
+      position: relative;
+      min-height: 0;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .55s ease, filter .3s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.06); filter: saturate(1.08) contrast(1.02); }
+    .gallery-item::after {
+      content: "@fres.asale";
+      position: absolute;
+      left: 16px; bottom: 16px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,.72);
+      backdrop-filter: blur(12px);
+      border-radius: 999px;
+      font-weight: 700;
+      color: var(--rose-dark);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all .25s ease;
+    }
+    .gallery-item:hover::after { opacity: 1; transform: translateY(0); }
+    .gallery-item.tall { grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 2; }
+
+    .review {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 100%;
+    }
+    .stars { font-size: 1.18rem; color: #f7b801; }
+    .review p { margin: 0; line-height: 1.7; color: var(--text); font-size: 1.02rem; }
+    .review strong { color: var(--rose-dark); }
+
+    .cta-box {
+      padding: 42px;
+      border-radius: 38px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(255,92,146,.18), rgba(255,182,122,.18), rgba(255,255,255,.55));
+      border: 1px solid rgba(255,255,255,.7);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+    .cta-box h2 {
+      margin: 14px 0 12px;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      line-height: 1;
+    }
+    .cta-box p {
+      max-width: 700px; margin: 0 auto 24px; color: var(--muted); line-height: 1.75;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .contact-card, .info-card {
+      padding: 28px;
+      border-radius: 30px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .full { grid-column: 1 / -1; }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .field label { font-weight: 700; font-size: .95rem; }
+    .field input, .field textarea {
+      width: 100%;
+      border: 1px solid rgba(255,92,146,.12);
+      border-radius: 18px;
+      padding: 15px 16px;
+      background: rgba(255,255,255,.72);
+      color: var(--text);
+      font: inherit;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .field textarea { min-height: 140px; resize: vertical; }
+    .field input:focus, .field textarea:focus {
+      border-color: rgba(255,92,146,.45);
+      box-shadow: 0 0 0 4px rgba(255,92,146,.12);
+      transform: translateY(-1px);
+    }
+    .info-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .info-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.56);
+      border: 1px solid rgba(255,255,255,.65);
+    }
+    .info-item .icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; font-size: 1.2rem;
+      background: linear-gradient(135deg, rgba(255,92,146,.2), rgba(255,182,122,.22));
+      flex-shrink: 0;
+    }
+    .info-item strong { display: block; margin-bottom: 4px; }
+    .info-item span, .info-item a { color: var(--muted); text-decoration: none; }
+
+    .social-block {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 28px;
+      border-radius: 32px;
+    }
+    .social-block h3 { margin: 0 0 10px; font-size: 1.8rem; }
+    .social-block p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+    footer {
+      padding: 40px 0 60px;
+    }
+    .footer-box {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      padding: 24px 28px;
+      border-radius: 28px;
+      flex-wrap: wrap;
+    }
+    .footer-box p, .footer-box a { margin: 0; color: var(--muted); text-decoration: none; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px) scale(.985);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    @media (max-width: 1100px) {
+      .hero-grid, .contact-grid, .social-block { grid-template-columns: 1fr; }
+      .menu-grid, .benefits-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-visual { min-height: 540px; }
+      .nav { border-radius: 34px; }
+    }
+
+    @media (max-width: 760px) {
+      header { top: 8px; }
+      .nav {
+        padding: 14px;
+        border-radius: 28px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+      .hero { min-height: auto; padding-top: 24px; }
+      .hero-stats, .menu-grid, .benefits-grid, .reviews-grid, .gallery-grid, form {
+        grid-template-columns: 1fr;
+      }
+      .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
+      .hero-visual { min-height: 420px; }
+      .tag, .mini-card { position: static; margin-top: 14px; }
+      .visual-card { position: relative; height: 100%; }
+      .social-block, .footer-box { padding: 22px; }
+      .cta-box { padding: 28px; }
+      .section { padding: 78px 0; }
+      .btn { width: 100%; }
+      .hero-actions .btn, .contact-actions .btn { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles"></div>
+
+  <header class="wrap">
+    <nav class="nav glass reveal">
+      <a class="brand" href="#inicio">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAA AUACAIAAAD0tAIdAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nO3deZBV5f3/8fdc2R0Y2YUNQxQZBEa8kIikKYjRkTBM1Ew1aVIxmcygMclM0m2Sm5hMsmQyqWQmM1nNMDH5Jg2TTKwwjUbHiMmcihCgiCAG2YXt7v5xfPjue3fP2V3d3XvObf6+X8+7f3Wv7/f7vu97v+8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAVW9wYAAK5dVVXV5+Xl5VevXv3NmzcHAABuY+fOnV9bW9v37t0DAAB38vzzz3/27NnTpk0DAAD38MMPP/zt27dfuXIlAAC4j1OnTv3Vq1e/efMmAAC4j2PHjv3hw4cfPHgQAABcR35+/n/99ddPnDgBAABX0qFDh/75558fPnwIAAC4jn379v3q1auPHj0KAACuI6+//vrPnj17/fr1AwAAd3L37t1fvXr1X3/99QAAcB2HDx/+2LFj79ixAwAAd3Lx4sXfvHnzrVu3AgAA7iM7O/vXr1//1KlTAABwH0uXLv3SpUvffPPNAABwH/fu3fvy5cuPHj0KAACuI7t27fr333//+PHjAABwH2fOnPn58+dfu3YtAADcR1ZWVq5du/b06dMAAHAfv/76a2/cuPHzzz8HAAB3cvfu3b/99tvHjh0DAIB7uXnz5j/55JPPnz8PAAB3cvXq1b/77rvPnj0LAACuI8uWLfu2bdt++uknAADcR5cuXfrEiRP/+c9/AgAA7mPjxo2/fPnyL1++DACA+7h27doHDhz4+eefAwAA7uP48eP/+uuvP3fuHAAA3MdPP/30tWvXvv766wAAcB+fPn36v//977dv3wYAANzH3Llz/+mnn/74448DAIB7ePbZZ3/48OFffPHFAABwH8uWLfvo0aMffPABAAAcx7Rp0/7ll19+8uRJAADwPpYuXfo3b9781VdfBQAA3McrV67c4cOHf/vttwEAANzHnDlzfvTo0adPnwoAALiP9evX/9VXX71y5QoAANzH0qVLf/XVV3/zzTcDAIB7uXjx4rdv337w4EEAALiPKVOm/Pz58x8+fBgAANzH4MGD//zzz3/11VcDAIB7eP3111+9evVPP/0UAAAcx/r16//48eOPHj0KAACuIzk5+Z07d/7uu+8CAIB7mDBhwtOnT//aa68BAIB7ePz48ceOHfuxY8cAAHCf9evX/9FHH71//34AALiP7du3/7vvvjt58iQAALiPV1555RcvXvzx48cAAHCf4cOHf/755+/duxcAANzH3Llz//zzz3/33XcDAIB7uXTp0n/00UePHz8OAAB3H5MmTfqvv/76q6++CgAA7mP16tW/efPmP/300wAAcB+fP3/+4cOHHz58GAAA3MfmzZv/1ltvffr0KQAAuI9Nmzb99NNP//DDDwEAANzH8ePHf/7557/++usAAHCf4cOHP3v27K+//hoAANzHjRs3/vzzz589exYAANzHli1b/vr16x8/fhwAALiPzZs3/9VXX71y5QoAANzH/Pnzf/nll9999x0AANzHvn37fv3117/++usAAHCfJ5988k8//fTrr78GAAB3cvny5f/yyy9/8cUXAQAA3MfOnTv/6KOPPnjwIAAAXEeLFi36wIEDz58/HwAA3MdHH330y5cvf/311wEAANzH/v37f/nll9955x0AANxH7969/8cff/zhw4cBAADeRUpKyu3bt3/77bcBAADeRdu2bfvcuXP/6quvAgAA3Md77733kSNHfvDBBwEAAN7F5s2b/9Zbb/3WW28BAADeRUpKyu7du3/nnXcCAADexfbt2//2229/8cUXAQAA3sWRI0f+0ksvffHFFwEAAJ6HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAg/8A4Y3Dk1D3q6wAAAAASUVORK5CYII=" alt="Logo FresasAle" />
+        <div>
+          <strong>FresasAle</strong>
+          <span>Un postre que te roba el corazón</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <a class="btn btn-primary" href="https://wa.me/34632413224?text=Hola%20FresasAle%2C%20quiero%20hacer%20un%20pedido%20%F0%9F%8D%93" target="_blank" rel="noreferrer">Pide Ahora 🍓</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Barcelona 📍 · Dulce · Viral · Premium</span>
+        <h1>Fresas con crema <span class="gradient-text">que enamoran a primera vista</span></h1>
+        <p>Dulzura, felicidad y sabor en cada bocado. El postre favorito de Barcelona para quienes quieren algo bonito, irresistible y listo para compartir en Instagram o TikTok.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/34632413224?text=Hola%20FresasAle%2C%20quiero%20hacer%20un%20pedido%20%F0%9F%8D%93" target="_blank" rel="noreferrer">Hacer Pedido</a>
+          <a class="btn btn-secondary" href="#menu">Ver Menú</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat glass"><strong>100%</strong><span>ingredientes frescos y presentación top</span></div>
+          <div class="stat glass"><strong>Viral</strong><span>estética pensada para Instagram y TikTok</span></div>
+          <div class="stat glass"><strong>Barcelona</strong><span>marca cercana, moderna y memorable</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <span class="floating-berry berry-1">🍓</span>
+        <span class="floating-berry berry-2">🍓</span>
+        <span class="floating-heart heart-1">💗</span>
+
+        <div class="visual-card glass">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Vaso premium de FresasAle con crema, Oreo, Nutella y fresa fresca" />
+        </div>
+        <div class="tag glass">🔥 Postre viral en Barcelona</div>
+        <div class="mini-card glass"><strong>Presentación premium</strong><span>Ideal para fotos, regalos dulces y antojos que se convierten en pedido.</span></div>
+      </div>
+    </div>
+  </main>
+
+  <section id="menu" class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Menú dulce</span>
+        <h2>Fresas con crema, toppings brutales y combinaciones que venden solas</h2>
+        <p>Todo el menú está preparado para que puedas cambiar nombres, precios y descripciones en segundos. Esta base ya queda lista para crecer con nuevos productos o una tienda online futura.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Fresas con crema clásica" />
+            <div class="price-badge">Desde 6,90€</div>
+          </div>
+          <div class="product-body">
+            <h3>Fresas con crema clásica 🍓</h3>
+            <p>La combinación estrella: fresas frescas, crema suave y una presentación preciosa que entra por los ojos antes del primer bocado.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20pedir%20Fresas%20con%20crema%20cl%C3%A1sica%20%F0%9F%8D%93" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Fresas con Oreo" />
+            <div class="price-badge">7,90€</div>
+          </div>
+          <div class="product-body">
+            <h3>Fresas con Oreo 🍪</h3>
+            <p>Cremosidad intensa con topping crujiente de Oreo. El equilibrio perfecto entre textura, dulzura y apariencia viral.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20pedir%20Fresas%20con%20Oreo%20%F0%9F%8D%AA" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Fresas con Nutella" />
+            <div class="price-badge">8,50€</div>
+          </div>
+          <div class="product-body">
+            <h3>Fresas con Nutella 🍫</h3>
+            <p>Un capricho intenso y elegante con Nutella cremosa, fresas jugosas y acabado premium para conquistar al instante.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20pedir%20Fresas%20con%20Nutella%20%F0%9F%8D%AB" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Fresas Premium Especiales" />
+            <div class="price-badge">10,90€</div>
+          </div>
+          <div class="product-body">
+            <h3>Fresas Premium Especiales ✨</h3>
+            <p>Versión visualmente espectacular con toppings selectos, más volumen y acabado deluxe para sorprender o regalar.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20pedir%20Fresas%20Premium%20Especiales%20%E2%9C%A8" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Combos dobles" />
+            <div class="price-badge">13,90€</div>
+          </div>
+          <div class="product-body">
+            <h3>Combos dobles 💕</h3>
+            <p>La opción ideal para compartir, regalar o convertir un simple antojo en un momento especial de pareja o amigos.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20pedir%20un%20Combo%20doble%20%F0%9F%92%95" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+
+        <article class="card product-card glass reveal">
+          <div class="product-media">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Ediciones limitadas" />
+            <div class="price-badge">Consultar</div>
+          </div>
+          <div class="product-body">
+            <h3>Ediciones limitadas 🔥</h3>
+            <p>Sabores especiales, toppings temáticos y lanzamientos para crear urgencia, conversación y más ventas por temporada.</p>
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Quiero%20saber%20las%20ediciones%20limitadas%20%F0%9F%94%A5" target="_blank" rel="noreferrer">Pedir ahora</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">¿Por qué FresasAle?</span>
+        <h2>Una marca pensada para antojar, enamorar y hacer que cada foto provoque pedido</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit glass reveal"><div class="icon">🍓</div><h3>Ingredientes frescos</h3><p>Fresas con presencia, color y textura para que el producto se vea tan bien como sabe.</p></article>
+        <article class="benefit glass reveal"><div class="icon">😋</div><h3>Sabor irresistible</h3><p>Crema suave, toppings generosos y una mezcla que convierte visitas en clientes recurrentes.</p></article>
+        <article class="benefit glass reveal"><div class="icon">✨</div><h3>Presentación premium</h3><p>Cada vaso está diseñado para parecer un capricho especial, elegante y muy compartible.</p></article>
+        <article class="benefit glass reveal"><div class="icon">💕</div><h3>Ideal para compartir</h3><p>Perfecto para sorprender, regalar o llevar un momento dulce a cualquier plan.</p></article>
+        <article class="benefit glass reveal"><div class="icon">📸</div><h3>Perfecto para Instagram</h3><p>Estética viral y visualmente potente para stories, reels, TikToks y recomendaciones orgánicas.</p></article>
+        <article class="benefit glass reveal"><div class="icon">🤍</div><h3>Hecho con cariño</h3><p>Marca cercana, dulce y profesional que cuida tanto el detalle del producto como la experiencia.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galería viral</span>
+        <h2>Una cuadrícula visual para que el producto se venda incluso antes del primer clic</h2>
+        <p>La galería está planteada para lucir bien en móvil, captar atención y reforzar la presencia visual de marca premium.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall glass reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Foto vertical del producto FresasAle" /></div>
+        <div class="gallery-item wide glass reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Foto horizontal del vaso premium FresasAle" /></div>
+        <div class="gallery-item glass reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Close up de fresas con crema" /></div>
+        <div class="gallery-item glass reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Toppings premium de FresasAle" /></div>
+        <div class="gallery-item wide glass reveal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAPoCAIAAACvQk3QAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nOz9abBk13Xmh31WdXV1dbd9zz7nVvve6z2NAAkQBCkRBQnRkiRLoSxJlc1YtiNrWf4Yl1u2x5Ll2JZjW85mzjrsf7D4s2M7nm5sM57d8cX4YJ2OHTsxkiVLlh3bihRLiiRIEiAAECBAgAQI0Nq9933f7qp7eM7d1V9VZ0R2x0bkcjvq7u6u6qqrWbNmfO6973u/9y4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwNQv3AwAAeG1FRUV9Z2dnDw8P79ixIwAAcAu3b9/+xYsXv/jiiwEAAB7jwoULv3Xr1r/44osBAAAe48MPP/yuXbvevXsXAABwH61atfqqVav+8MMPAwAAPLdNmzb98uXLv/nmmwEAAB7j+PHjv3bt2lOnTgEAAB7j0qVLf/To0devXwcAAHiM3bt3f+fOnf/4448DAAA8xo8//vi7du36xRdfBAAAeIyOHTv2H3/88ZcvXwYAAHiMffv2ffr0KX/55RcAAOAxbty48fv37z969CgAAOAxtm/f/qeffvrcuXMAAAB7jNWrV//VV1+9cOECAADgMX7++ecfPHjwoUOHAAAANxMfH/+lS5cePHgQAADgMW7duvXTp0//8ssvAwAAPLdPP/30Cxcu/PvvvwMAADzG4sWLf/XVV9+8eRMAAOAxLly48Nu3b//qq68CAADeR0lJSV+6dOn58+cBAAAeIzc3d/Pmzb/66qsAAAD3MT09/fbt2//4448DAAA8xtq1a//111+/evUqAADgMW7duvXdu3f/4osvAwAA3MfatWv/5z//+aNHjwIAAB7j8uXLv3Xr1suXLwMAADzG6dOnf/LJJ1+8eBEAAOAxNm/e/MOHD//yyy8DAAA8xjfffPPDhw+fPn0aAADgMXbv3v3AgQO/8cYbAACAx3jvvfd+69atN27cCAAAMMZnn332u3fv/vbbbwcAAHhM3bt3//333z98+DAAAOAxtm7d+sMPP/z6668DAAA8xhdffPHly5d/8cUXAwAA3Mfq1at/8cUXnzt3DgAA4DEmT578k08+efnyZQAA4DFWrVr1AwcOfP311wEAAB7j4MGD//jjj3/11VcDAAA8xt69e3/48OGvv/46AADgMXbv3v2XX37x7NmzAACAx1i4cOGHDx9+7NgxAADgMT766KO/cePG77//HgAA4DEmTZr0k08+eebMmQAA4DHWrl37X3/99ebNmwEAAB7j9u3bP3r06LfffhsAAOAxbt68+Y8//viDDz4IAAB4jNzc3N+8efPVq1cBAAAeIz8//3fffXf16lUAAOAxtm3b9k8//fTWrVsBAAAeY+PGjV+6dOmxY8cAAAB3cvfu3V+6dOmTTz4JAAB4jN7e3v/tt9/+3XffBQAAeIy5c+f+6quvPnnyJAAAwGO0a9fu8uXLHz58GAAA4DG2bNny8uXLv/rqqwEAAB4jJyenP3z48I8ePQoAAHCfAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4L/wAq0r8qtfzEsQAAAABJRU5ErkJggg==" alt="Producto viral FresasAle en Barcelona" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones" class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Opiniones reales</span>
+        <h2>Lo que provoca FresasAle cuando alguien lo prueba por primera vez</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review glass reveal"><div class="stars">⭐⭐⭐⭐⭐</div><p>“Las mejores fresas con crema que probé en Barcelona. Se ven brutales y saben aún mejor.”</p><strong>Cliente feliz</strong></article>
+        <article class="review glass reveal"><div class="stars">⭐⭐⭐⭐⭐</div><p>“Adictivas, brutales y súper bonitas. Literalmente dan ganas de hacer foto antes de comer.”</p><strong>Pedido recurrente</strong></article>
+        <article class="review glass reveal"><div class="stars">⭐⭐⭐⭐⭐</div><p>“Perfectas para sorprender. El packaging visual y el sabor hacen que quieras repetir.”</p><strong>Fan de FresasAle</strong></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <span class="eyebrow">CTA fuerte</span>
+        <h2>Si lo ves... lo quieres 🍓</h2>
+        <p>La web está pensada para que el usuario sienta deseo inmediato, encuentre rápido el menú y termine en WhatsApp o Instagram con el mínimo roce posible.</p>
+        <div class="contact-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="https://wa.me/34632413224?text=Hola%20FresasAle%2C%20quiero%20hacer%20mi%20pedido%20ahora%20%F0%9F%8D%93" target="_blank" rel="noreferrer">Haz tu pedido ahora</a>
+          <a class="btn btn-secondary" href="#pedidos">Enviar formulario</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedidos" class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-card glass reveal">
+          <span class="eyebrow">Pedidos y contacto</span>
+          <h2 style="font-size:clamp(2rem,5vw,3.3rem); margin:18px 0 12px; line-height:1;">Haz tu pedido de forma rápida</h2>
+          <p style="color:var(--muted); line-height:1.75; margin:0 0 22px;">Formulario visual, directo y listo para conectar con una futura automatización por correo o WhatsApp. De momento se envía por mail de forma básica y puede adaptarse a cualquier backend.</p>
+
+          <form action="mailto:pedidos@fresasale.com" method="post" enctype="text/plain">
+            <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="Nombre" placeholder="Tu nombre" required /></div>
+            <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="Teléfono" placeholder="Tu teléfono" required /></div>
+            <div class="field full"><label for="pedido">Pedido</label><input id="pedido" name="Pedido" placeholder="Ej. 2 Fresas con Oreo + 1 Premium Especial" required /></div>
+            <div class="field full"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="Mensaje" placeholder="Cuéntanos qué te apetece, horario o detalles del pedido"></textarea></div>
+            <div class="full"><button class="btn btn-primary" type="submit">Enviar Pedido</button></div>
+          </form>
+        </div>
+
+        <aside id="contacto" class="info-card glass reveal">
+          <span class="eyebrow">Canales directos</span>
+          <h3 style="font-size:2rem; margin:18px 0 10px;">Contacta con FresasAle</h3>
+          <p style="color:var(--muted); line-height:1.7; margin:0;">Sección enfocada a conversión local y confianza de marca.</p>
+
+          <div class="info-list">
+            <div class="info-item"><div class="icon">📲</div><div><strong>WhatsApp</strong><a href="https://wa.me/34632413224?text=Hola%20FresasAle%20%F0%9F%8D%93" target="_blank" rel="noreferrer">+34 632 41 32 24</a></div></div>
+            <div class="info-item"><div class="icon">📸</div><div><strong>Instagram</strong><a href="https://instagram.com/fres.asale" target="_blank" rel="noreferrer">@fres.asale</a></div></div>
+            <div class="info-item"><div class="icon">📍</div><div><strong>Ubicación</strong><span>Barcelona</span></div></div>
+            <div class="info-item"><div class="icon">💌</div><div><strong>Eslogan</strong><span>Un postre que te roba el corazón</span></div></div>
+          </div>
+
+          <div class="contact-actions" style="margin-top:22px;">
+            <a class="btn btn-primary" href="https://wa.me/34632413224?text=Hola%20FresasAle%20quiero%20pedir%20%F0%9F%8D%93" target="_blank" rel="noreferrer">WhatsApp directo</a>
+            <a class="btn btn-secondary" href="https://instagram.com/fres.asale" target="_blank" rel="noreferrer">Instagram directo</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="instagram" class="section">
+    <div class="wrap">
+      <div class="social-block glass reveal">
+        <div>
+          <span class="eyebrow">Redes sociales</span>
+          <h3>@fres.asale</h3>
+          <p>La web está pensada para empujar seguidores y pedidos. Puedes conectar el feed real de Instagram más adelante o integrar reels destacados en esta misma sección.</p>
+        </div>
+        <a class="btn btn-primary" href="https://instagram.com/fres.asale" target="_blank" rel="noreferrer">Seguir cuenta</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-box glass reveal">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAA AUACAIAAAD0tAIdAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nO3deZBV5f3/8fdc2R0Y2YUNQxQZBEa8kIikKYjRkTBM1Ew1aVIxmcygMclM0m2Sm5hMsmQyqWQmM1nNMDH5Jg2TTKwwjUbHiMmcihCgiCAG2YXt7v5xfPjue3fP2V3d3XvObf6+X8+7f3Wv7/f7vu97v+8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAVW9wYAAK5dVVXV5+Xl5VevXv3NmzcHAABuY+fOnV9bW9v37t0DAAB38vzzz3/27NnTpk0DAAD38MMPP/zt27dfuXIlAAC4j1OnTv3Vq1e/efMmAAC4j2PHjv3hw4cfPHgQAABcR35+/n/99ddPnDgBAABX0qFDh/75558fPnwIAAC4jn379v3q1auPHj0KAACuI6+//vrPnj17/fr1AwAAd3L37t1fvXr1X3/99QAAcB2HDx/+2LFj79ixAwAAd3Lx4sXfvHnzrVu3AgAA7iM7O/vXr1//1KlTAABwH0uXLv3SpUvffPPNAABwH/fu3fvy5cuPHj0KAACuI7t27fr333//+PHjAABwH2fOnPn58+dfu3YtAADcR1ZWVq5du/b06dMAAHAfv/76a2/cuPHzzz8HAAB3cvfu3b/99tvHjh0DAIB7uXnz5j/55JPPnz8PAAB3cvXq1b/77rvPnj0LAACuI8uWLfu2bdt++uknAADcR5cuXfrEiRP/+c9/AgAA7mPjxo2/fPnyL1++DACA+7h27doHDhz4+eefAwAA7uP48eP/+uuvP3fuHAAA3MdPP/30tWvXvv766wAAcB+fPn36v//977dv3wYAANzH3Llz/+mnn/74448DAIB7ePbZZ3/48OFffPHFAABwH8uWLfvo0aMffPABAAAcx7Rp0/7ll19+8uRJAADwPpYuXfo3b9781VdfBQAA3McrV67c4cOHf/vttwEAANzHnDlzfvTo0adPnwoAALiP9evX/9VXX71y5QoAANzH0qVLf/XVV3/zzTcDAIB7uXjx4rdv337w4EEAALiPKVOm/Pz58x8+fBgAANzH4MGD//zzz3/11VcDAIB7eP3111+9evVPP/0UAAAcx/r16//48eOPHj0KAACuIzk5+Z07d/7uu+8CAIB7mDBhwtOnT//aa68BAIB7ePz48ceOHfuxY8cAAHCf9evX/9FHH71//34AALiP7du3/7vvvjt58iQAALiPV1555RcvXvzx48cAAHCf4cOHf/755+/duxcAANzH3Llz//zzz3/33XcDAIB7uXTp0n/00UePHz8OAAB3H5MmTfqvv/76q6++CgAA7mP16tW/efPmP/300wAAcB+fP3/+4cOHHz58GAAA3MfmzZv/1ltvffr0KQAAuI9Nmzb99NNP//DDDwEAANzH8ePHf/7557/++usAAHCf4cOHP3v27K+//hoAANzHjRs3/vzzz589exYAANzHli1b/vr16x8/fhwAALiPzZs3/9VXX71y5QoAANzH/Pnzf/nll9999x0AANzHvn37fv3117/++usAAHCfJ5988k8//fTrr78GAAB3cvny5f/yyy9/8cUXAQAA3MfOnTv/6KOPPnjwIAAAXEeLFi36wIEDz58/HwAA3MdHH330y5cvf/311wEAANzH/v37f/nll9955x0AANxH7969/8cff/zhw4cBAADeRUpKyu3bt3/77bcBAADeRdu2bfvcuXP/6quvAgAA3Md77733kSNHfvDBBwEAAN7F5s2b/9Zbb/3WW28BAADeRUpKyu7du3/nnXcCAADexfbt2//2229/8cUXAQAA3sWRI0f+0ksvffHFFwEAAJ6HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAg/8A4Y3Dk1D3q6wAAAAASUVORK5CYII=" alt="Logo FresasAle" style="width:54px;height:54px;border-radius:50%;background:#fff;object-fit:cover;" />
+          <div>
+            <strong style="display:block; font-size:1.05rem;">FresasAle</strong>
+            <p>Un postre que te roba el corazón</p>
+          </div>
+        </div>
+        <p>Barcelona · <a href="https://instagram.com/fres.asale" target="_blank" rel="noreferrer">@fres.asale</a> · <a href="https://wa.me/34632413224" target="_blank" rel="noreferrer">WhatsApp</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    const parallaxItems = document.querySelectorAll('.hero-visual, .cta-box');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      parallaxItems.forEach((item, index) => {
+        const speed = index === 0 ? 0.03 : 0.015;
+        item.style.transform = `translateY(${y * speed}px)`;
+      });
+    }, { passive: true });
+  </script>
+</body>
+</html>
